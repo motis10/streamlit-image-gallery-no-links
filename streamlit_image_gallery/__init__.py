@@ -1,7 +1,7 @@
 import os
 import streamlit.components.v1 as components
 
-_RELEASE = False
+_RELEASE = True
 
 if not _RELEASE:
     _component_func = components.declare_component(
@@ -36,7 +36,7 @@ def streamlit_image_gallery(images, max_width=400, gap=4, max_cols=2, max_rows=2
         None, and the component's arguments are changed, the component will
         be re-mounted in the Streamlit frontend and lose its current state.
     """
-    _component_func(
+    return _component_func(
         images=images,
         max_width=max_width,
         gap=gap,
