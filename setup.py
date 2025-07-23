@@ -6,17 +6,31 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="streamlit-image-gallery",
-    version="0.0.2",
-    author="Dennis Benz",
-    author_email="debenz@uni-osnabrueck.de",
-    description="Streamlit component for displaying multiple images in a grid",
+    name="streamlit-image-gallery-enhanced",
+    version="1.0.0",
+    author="motis10",
+    author_email="moti.stein@gmail.com",
+    description="Enhanced Streamlit component for displaying images in a responsive grid with hover effects and click callbacks",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/virtUOS/streamlit-image-gallery",
+    url="https://github.com/motis10/streamlit-image-gallery-no-links",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    classifiers=[],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Software Development :: User Interfaces",
+        "Topic :: Multimedia :: Graphics :: Viewers",
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    ],
+    keywords="streamlit, image, gallery, grid, component, hover, interactive",
     python_requires=">=3.7",
     install_requires=[
         # By definition, a Custom Component depends on Streamlit.
