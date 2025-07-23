@@ -41,7 +41,8 @@ class StreamlitGallery extends StreamlitComponentBase {
           gridTemplateColumns: `repeat(${cols}, 1fr)`,
           gap: `${this.gap}px`,
           maxWidth: this.maxWidth,
-          width: '100%'
+          width: '100%',
+          margin: '0 auto'
         }}
         ref={(element) => { this.imageListElement = element }}
       >
